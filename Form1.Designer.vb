@@ -42,8 +42,8 @@ Partial Class Form1
         Me.BtnSubmit = New System.Windows.Forms.Button()
         Me.BtnExit = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.radCoNo = New System.Windows.Forms.RadioButton()
+        Me.radCo = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.nudAge, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -275,8 +275,8 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.RadioButton1)
-        Me.GroupBox4.Controls.Add(Me.RadioButton2)
+        Me.GroupBox4.Controls.Add(Me.radCoNo)
+        Me.GroupBox4.Controls.Add(Me.radCo)
         Me.GroupBox4.Location = New System.Drawing.Point(214, 197)
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Name = "GroupBox4"
@@ -285,31 +285,31 @@ Partial Class Form1
         Me.GroupBox4.TabIndex = 16
         Me.GroupBox4.TabStop = False
         '
-        'RadioButton1
+        'radCoNo
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(88, 17)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(52, 26)
-        Me.RadioButton1.TabIndex = 7
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "No"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radCoNo.AutoSize = True
+        Me.radCoNo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radCoNo.Location = New System.Drawing.Point(88, 17)
+        Me.radCoNo.Margin = New System.Windows.Forms.Padding(2)
+        Me.radCoNo.Name = "radCoNo"
+        Me.radCoNo.Size = New System.Drawing.Size(52, 26)
+        Me.radCoNo.TabIndex = 7
+        Me.radCoNo.TabStop = True
+        Me.radCoNo.Text = "No"
+        Me.radCoNo.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radCo
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(22, 17)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(59, 26)
-        Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Yes"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radCo.AutoSize = True
+        Me.radCo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radCo.Location = New System.Drawing.Point(22, 17)
+        Me.radCo.Margin = New System.Windows.Forms.Padding(2)
+        Me.radCo.Name = "radCo"
+        Me.radCo.Size = New System.Drawing.Size(59, 26)
+        Me.radCo.TabIndex = 6
+        Me.radCo.TabStop = True
+        Me.radCo.Text = "Yes"
+        Me.radCo.UseVisualStyleBackColor = True
         '
         'Label6
         '
@@ -380,7 +380,7 @@ Partial Class Form1
     Friend WithEvents BtnSubmit As Button
     Friend WithEvents BtnExit As Button
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents radCoNo As RadioButton
+    Friend WithEvents radCo As RadioButton
     Friend WithEvents Label6 As Label
 End Class

@@ -12,11 +12,17 @@
     End Sub
 
     Private Sub BtnSubmit_Click(sender As Object, e As EventArgs) Handles BtnSubmit.Click
+        strName = txtName.Text
 
         Age()
         Pass()
+        Credit()
+        Coco()
+        Category()
         If num = 1 Then
             MessageBox.Show(strError, "Sorry", MessageBoxButtons.OK)
+        Else
+            MessageBox.Show("Name: " + strName + vbCrLf + "You are Eligible", "Congratulations", MessageBoxButtons.OK)
         End If
 
     End Sub
@@ -51,7 +57,52 @@
         End If
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Credit()
+        If radCredit.Checked = True Then
 
+            Exit Sub
+        ElseIf radNoCredit.Checked = True Then
+            strError = strError & vbCrLf & "You do not have enough credits"
+            num = 1
+            Exit Sub
+        Else
+            MessageBox.Show("Select Yes or No for Question 3", "Sorry", MessageBoxButtons.OK)
+            num = 0
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub Coco()
+        If radCo.Checked = True Then
+
+            Exit Sub
+        ElseIf radCoNo.Checked = True Then
+            strError = strError & vbCrLf & "You are not active in co-curiculum"
+            num = 1
+            Exit Sub
+        Else
+            MessageBox.Show("Select Yes or No for Question 4", "Sorry", MessageBoxButtons.OK)
+            num = 0
+            Exit Sub
+        End If
+    End Sub
+
+    Private Sub Category()
+        If radB40.Checked = True Then
+
+            Exit Sub
+        ElseIf radM40.Checked = True Then
+            strError = strError & vbCrLf & "M40 is not an eligible category"
+            num = 1
+            Exit Sub
+        ElseIf radT20.Checked = True Then
+            strError = strError & vbCrLf & "T20 is not an eligible category"
+            num = 1
+            Exit Sub
+        Else
+            MessageBox.Show("Select B40, M40 or T20 for Question 5", "Sorry", MessageBoxButtons.OK)
+            num = 0
+            Exit Sub
+        End If
     End Sub
 End Class
