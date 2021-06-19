@@ -54,7 +54,9 @@
 
     Private Sub Pass()
         If radPass.Checked = True Then
-            num = 0
+            If strError = "" Then
+                num = 0
+            End If
             Exit Sub
         ElseIf radFail.Checked = True Then
             strError = strError & vbCrLf & "You failed BM and/or Sejarah"
@@ -69,7 +71,9 @@
 
     Private Sub Credit()
         If radCredit.Checked = True Then
-            num = 0
+            If strError = "" Then
+                num = 0
+            End If
             Exit Sub
         ElseIf radNoCredit.Checked = True Then
             strError = strError & vbCrLf & "You do not have enough credits"
@@ -84,7 +88,9 @@
 
     Private Sub Coco()
         If radCo.Checked = True Then
-            num = 0
+            If strError = "" Then
+                num = 0
+            End If
             Exit Sub
         ElseIf radCoNo.Checked = True Then
             strError = strError & vbCrLf & "You are not active in co-curiculum"
@@ -99,7 +105,9 @@
 
     Private Sub Category()
         If radB40.Checked = True Then
-            num = 0
+            If strError = "" Then
+                num = 0
+            End If
             Exit Sub
         ElseIf radM40.Checked = True Then
             strError = strError & vbCrLf & "M40 is not an eligible category"
