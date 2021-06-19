@@ -14,7 +14,6 @@
     Private Sub BtnSubmit_Click(sender As Object, e As EventArgs) Handles BtnSubmit.Click
         strName = txtName.Text
 
-
         If strName <> "" Then
             Age()
             Pass()
@@ -22,10 +21,8 @@
             Coco()
             Category()
 
-
-
             If num = 1 Then
-                MessageBox.Show(strError, "Sorry", MessageBoxButtons.OK)
+                MessageBox.Show("Name: " + strName + vbCrLf + strError, "Sorry", MessageBoxButtons.OK)
             ElseIf num = 0 Then
                 MessageBox.Show("Name: " + strName + vbCrLf + "You are Eligible", "Congratulations", MessageBoxButtons.OK)
             Else
