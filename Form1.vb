@@ -5,7 +5,7 @@
     Dim strError As String = ""
 
     Private Sub BtnExit_Click(sender As Object, e As EventArgs) Handles BtnExit.Click
-        Dim result = MessageBox.Show(" Are you sure you want to Exit?", "University Scholarship System", MessageBoxButtons.YesNo)
+        Dim result = MessageBox.Show(" Are you sure you want to Exit?", "University Scholarship System", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             Me.Close()
         End If
@@ -14,15 +14,25 @@
     Private Sub BtnSubmit_Click(sender As Object, e As EventArgs) Handles BtnSubmit.Click
         strName = txtName.Text
 
-        Age()
-        Pass()
-        Credit()
-        Coco()
-        Category()
-        If num = 1 Then
-            MessageBox.Show(strError, "Sorry", MessageBoxButtons.OK)
+
+        If strName <> "" Then
+            Age()
+            Pass()
+            Credit()
+            Coco()
+            Category()
+
+
+
+            If num = 1 Then
+                MessageBox.Show(strError, "Sorry", MessageBoxButtons.OK)
+            ElseIf num = 0 Then
+                MessageBox.Show("Name: " + strName + vbCrLf + "You are Eligible", "Congratulations", MessageBoxButtons.OK)
+            Else
+
+            End If
         Else
-            MessageBox.Show("Name: " + strName + vbCrLf + "You are Eligible", "Congratulations", MessageBoxButtons.OK)
+            MessageBox.Show("Please Enter Your Name!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
 
     End Sub
@@ -31,10 +41,10 @@
         intAge = nudAge.Value
 
         If intAge < 17 Then
-            strError = "Too Young"
+            strError = "You must be 17-20 year's old"
             num = 1
         ElseIf intAge > 20 Then
-            strError = "Too Old"
+            strError = "You must be 17-20 year's old"
             num = 1
         Else
             strError = ""
@@ -44,7 +54,7 @@
 
     Private Sub Pass()
         If radPass.Checked = True Then
-
+            num = 0
             Exit Sub
         ElseIf radFail.Checked = True Then
             strError = strError & vbCrLf & "You failed BM and/or Sejarah"
@@ -52,14 +62,14 @@
             Exit Sub
         Else
             MessageBox.Show("Select Yes or No for Question 2", "Sorry", MessageBoxButtons.OK)
-            num = 0
+            num = 2
             Exit Sub
         End If
     End Sub
 
     Private Sub Credit()
         If radCredit.Checked = True Then
-
+            num = 0
             Exit Sub
         ElseIf radNoCredit.Checked = True Then
             strError = strError & vbCrLf & "You do not have enough credits"
@@ -67,14 +77,14 @@
             Exit Sub
         Else
             MessageBox.Show("Select Yes or No for Question 3", "Sorry", MessageBoxButtons.OK)
-            num = 0
+            num = 2
             Exit Sub
         End If
     End Sub
 
     Private Sub Coco()
         If radCo.Checked = True Then
-
+            num = 0
             Exit Sub
         ElseIf radCoNo.Checked = True Then
             strError = strError & vbCrLf & "You are not active in co-curiculum"
@@ -82,14 +92,14 @@
             Exit Sub
         Else
             MessageBox.Show("Select Yes or No for Question 4", "Sorry", MessageBoxButtons.OK)
-            num = 0
+            num = 2
             Exit Sub
         End If
     End Sub
 
     Private Sub Category()
         If radB40.Checked = True Then
-
+            num = 0
             Exit Sub
         ElseIf radM40.Checked = True Then
             strError = strError & vbCrLf & "M40 is not an eligible category"
@@ -101,7 +111,7 @@
             Exit Sub
         Else
             MessageBox.Show("Select B40, M40 or T20 for Question 5", "Sorry", MessageBoxButtons.OK)
-            num = 0
+            num = 2
             Exit Sub
         End If
     End Sub

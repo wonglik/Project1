@@ -56,48 +56,46 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(125, 22)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(167, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 22)
+        Me.Label1.Size = New System.Drawing.Size(70, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Name:"
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(214, 24)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtName.Location = New System.Drawing.Point(285, 30)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(145, 20)
+        Me.txtName.Size = New System.Drawing.Size(192, 22)
         Me.txtName.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(138, 65)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(184, 80)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 22)
+        Me.Label2.Size = New System.Drawing.Size(53, 24)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Age:"
         '
         'nudAge
         '
-        Me.nudAge.Location = New System.Drawing.Point(214, 65)
-        Me.nudAge.Margin = New System.Windows.Forms.Padding(2)
+        Me.nudAge.Location = New System.Drawing.Point(285, 80)
+        Me.nudAge.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.nudAge.Name = "nudAge"
-        Me.nudAge.Size = New System.Drawing.Size(56, 20)
+        Me.nudAge.Size = New System.Drawing.Size(75, 22)
         Me.nudAge.TabIndex = 3
         '
         'radPass
         '
         Me.radPass.AutoSize = True
         Me.radPass.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radPass.Location = New System.Drawing.Point(22, 17)
-        Me.radPass.Margin = New System.Windows.Forms.Padding(2)
+        Me.radPass.Location = New System.Drawing.Point(29, 21)
+        Me.radPass.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radPass.Name = "radPass"
-        Me.radPass.Size = New System.Drawing.Size(59, 26)
+        Me.radPass.Size = New System.Drawing.Size(64, 27)
         Me.radPass.TabIndex = 6
         Me.radPass.TabStop = True
         Me.radPass.Text = "Yes"
@@ -107,11 +105,11 @@ Partial Class Form1
         '
         Me.GroupBox1.Controls.Add(Me.radFail)
         Me.GroupBox1.Controls.Add(Me.radPass)
-        Me.GroupBox1.Location = New System.Drawing.Point(214, 98)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Location = New System.Drawing.Point(285, 121)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(144, 45)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(192, 55)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         '
@@ -119,10 +117,10 @@ Partial Class Form1
         '
         Me.radFail.AutoSize = True
         Me.radFail.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radFail.Location = New System.Drawing.Point(88, 17)
-        Me.radFail.Margin = New System.Windows.Forms.Padding(2)
+        Me.radFail.Location = New System.Drawing.Point(117, 21)
+        Me.radFail.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radFail.Name = "radFail"
-        Me.radFail.Size = New System.Drawing.Size(52, 26)
+        Me.radFail.Size = New System.Drawing.Size(55, 27)
         Me.radFail.TabIndex = 7
         Me.radFail.TabStop = True
         Me.radFail.Text = "No"
@@ -132,10 +130,9 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(23, 114)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(31, 140)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(215, 22)
+        Me.Label3.Size = New System.Drawing.Size(218, 24)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Pass BM and Sejarah:"
         '
@@ -143,10 +140,9 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(50, 164)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(67, 202)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(179, 22)
+        Me.Label4.Size = New System.Drawing.Size(183, 24)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Have Five Credits:"
         '
@@ -154,11 +150,11 @@ Partial Class Form1
         '
         Me.GroupBox2.Controls.Add(Me.radNoCredit)
         Me.GroupBox2.Controls.Add(Me.radCredit)
-        Me.GroupBox2.Location = New System.Drawing.Point(214, 148)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Location = New System.Drawing.Point(285, 182)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(144, 45)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(192, 55)
         Me.GroupBox2.TabIndex = 11
         Me.GroupBox2.TabStop = False
         '
@@ -166,10 +162,10 @@ Partial Class Form1
         '
         Me.radNoCredit.AutoSize = True
         Me.radNoCredit.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radNoCredit.Location = New System.Drawing.Point(88, 17)
-        Me.radNoCredit.Margin = New System.Windows.Forms.Padding(2)
+        Me.radNoCredit.Location = New System.Drawing.Point(117, 21)
+        Me.radNoCredit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radNoCredit.Name = "radNoCredit"
-        Me.radNoCredit.Size = New System.Drawing.Size(52, 26)
+        Me.radNoCredit.Size = New System.Drawing.Size(55, 27)
         Me.radNoCredit.TabIndex = 7
         Me.radNoCredit.TabStop = True
         Me.radNoCredit.Text = "No"
@@ -179,10 +175,10 @@ Partial Class Form1
         '
         Me.radCredit.AutoSize = True
         Me.radCredit.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radCredit.Location = New System.Drawing.Point(22, 17)
-        Me.radCredit.Margin = New System.Windows.Forms.Padding(2)
+        Me.radCredit.Location = New System.Drawing.Point(29, 21)
+        Me.radCredit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radCredit.Name = "radCredit"
-        Me.radCredit.Size = New System.Drawing.Size(59, 26)
+        Me.radCredit.Size = New System.Drawing.Size(64, 27)
         Me.radCredit.TabIndex = 6
         Me.radCredit.TabStop = True
         Me.radCredit.Text = "Yes"
@@ -192,10 +188,9 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(110, 265)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(147, 326)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 22)
+        Me.Label5.Size = New System.Drawing.Size(103, 24)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Category:"
         '
@@ -204,11 +199,11 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.radT20)
         Me.GroupBox3.Controls.Add(Me.radM40)
         Me.GroupBox3.Controls.Add(Me.radB40)
-        Me.GroupBox3.Location = New System.Drawing.Point(214, 248)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Location = New System.Drawing.Point(285, 305)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox3.Size = New System.Drawing.Size(215, 45)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(287, 55)
         Me.GroupBox3.TabIndex = 13
         Me.GroupBox3.TabStop = False
         '
@@ -216,10 +211,10 @@ Partial Class Form1
         '
         Me.radT20.AutoSize = True
         Me.radT20.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radT20.Location = New System.Drawing.Point(152, 17)
-        Me.radT20.Margin = New System.Windows.Forms.Padding(2)
+        Me.radT20.Location = New System.Drawing.Point(203, 21)
+        Me.radT20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radT20.Name = "radT20"
-        Me.radT20.Size = New System.Drawing.Size(62, 26)
+        Me.radT20.Size = New System.Drawing.Size(65, 27)
         Me.radT20.TabIndex = 8
         Me.radT20.TabStop = True
         Me.radT20.Text = "T20"
@@ -229,10 +224,10 @@ Partial Class Form1
         '
         Me.radM40.AutoSize = True
         Me.radM40.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radM40.Location = New System.Drawing.Point(88, 17)
-        Me.radM40.Margin = New System.Windows.Forms.Padding(2)
+        Me.radM40.Location = New System.Drawing.Point(117, 21)
+        Me.radM40.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radM40.Name = "radM40"
-        Me.radM40.Size = New System.Drawing.Size(65, 26)
+        Me.radM40.Size = New System.Drawing.Size(70, 27)
         Me.radM40.TabIndex = 7
         Me.radM40.TabStop = True
         Me.radM40.Text = "M40"
@@ -242,10 +237,10 @@ Partial Class Form1
         '
         Me.radB40.AutoSize = True
         Me.radB40.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radB40.Location = New System.Drawing.Point(22, 17)
-        Me.radB40.Margin = New System.Windows.Forms.Padding(2)
+        Me.radB40.Location = New System.Drawing.Point(29, 21)
+        Me.radB40.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radB40.Name = "radB40"
-        Me.radB40.Size = New System.Drawing.Size(63, 26)
+        Me.radB40.Size = New System.Drawing.Size(66, 27)
         Me.radB40.TabIndex = 6
         Me.radB40.TabStop = True
         Me.radB40.Text = "B40"
@@ -253,35 +248,37 @@ Partial Class Form1
         '
         'BtnSubmit
         '
+        Me.BtnSubmit.BackColor = System.Drawing.Color.SpringGreen
         Me.BtnSubmit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.BtnSubmit.Location = New System.Drawing.Point(128, 332)
-        Me.BtnSubmit.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnSubmit.Location = New System.Drawing.Point(171, 409)
+        Me.BtnSubmit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnSubmit.Name = "BtnSubmit"
-        Me.BtnSubmit.Size = New System.Drawing.Size(85, 31)
+        Me.BtnSubmit.Size = New System.Drawing.Size(113, 38)
         Me.BtnSubmit.TabIndex = 14
         Me.BtnSubmit.Text = "SUBMIT"
-        Me.BtnSubmit.UseVisualStyleBackColor = True
+        Me.BtnSubmit.UseVisualStyleBackColor = False
         '
         'BtnExit
         '
+        Me.BtnExit.BackColor = System.Drawing.Color.Red
         Me.BtnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.BtnExit.Location = New System.Drawing.Point(231, 332)
-        Me.BtnExit.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnExit.Location = New System.Drawing.Point(308, 409)
+        Me.BtnExit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnExit.Name = "BtnExit"
-        Me.BtnExit.Size = New System.Drawing.Size(85, 31)
+        Me.BtnExit.Size = New System.Drawing.Size(113, 38)
         Me.BtnExit.TabIndex = 15
         Me.BtnExit.Text = "EXIT"
-        Me.BtnExit.UseVisualStyleBackColor = True
+        Me.BtnExit.UseVisualStyleBackColor = False
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.radCoNo)
         Me.GroupBox4.Controls.Add(Me.radCo)
-        Me.GroupBox4.Location = New System.Drawing.Point(214, 197)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox4.Location = New System.Drawing.Point(285, 242)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox4.Size = New System.Drawing.Size(144, 45)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox4.Size = New System.Drawing.Size(192, 55)
         Me.GroupBox4.TabIndex = 16
         Me.GroupBox4.TabStop = False
         '
@@ -289,10 +286,10 @@ Partial Class Form1
         '
         Me.radCoNo.AutoSize = True
         Me.radCoNo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radCoNo.Location = New System.Drawing.Point(88, 17)
-        Me.radCoNo.Margin = New System.Windows.Forms.Padding(2)
+        Me.radCoNo.Location = New System.Drawing.Point(117, 21)
+        Me.radCoNo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radCoNo.Name = "radCoNo"
-        Me.radCoNo.Size = New System.Drawing.Size(52, 26)
+        Me.radCoNo.Size = New System.Drawing.Size(55, 27)
         Me.radCoNo.TabIndex = 7
         Me.radCoNo.TabStop = True
         Me.radCoNo.Text = "No"
@@ -302,10 +299,10 @@ Partial Class Form1
         '
         Me.radCo.AutoSize = True
         Me.radCo.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.radCo.Location = New System.Drawing.Point(22, 17)
-        Me.radCo.Margin = New System.Windows.Forms.Padding(2)
+        Me.radCo.Location = New System.Drawing.Point(29, 21)
+        Me.radCo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radCo.Name = "radCo"
-        Me.radCo.Size = New System.Drawing.Size(59, 26)
+        Me.radCo.Size = New System.Drawing.Size(64, 27)
         Me.radCo.TabIndex = 6
         Me.radCo.TabStop = True
         Me.radCo.Text = "Yes"
@@ -315,18 +312,18 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 214)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(16, 263)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(229, 22)
+        Me.Label6.Size = New System.Drawing.Size(233, 24)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Active In Co-Curiculum:"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 384)
+        Me.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.ClientSize = New System.Drawing.Size(603, 473)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.GroupBox4)
@@ -342,7 +339,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "University Scholarship System"
