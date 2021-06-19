@@ -41,11 +41,12 @@
 
             Exit Sub
         ElseIf radFail.Checked = True Then
-            strError = strError + vbCrLf + "You failed BM and/or Sejarah"
+            strError = strError & vbCrLf & "You failed BM and/or Sejarah"
             num = 1
             Exit Sub
         Else
-            MsgBox("Select Yes or No for Question 2")
+            MessageBox.Show("Select Yes or No for Question 2", "Sorry", MessageBoxButtons.OK)
+            num = 0
             Exit Sub
         End If
     End Sub
